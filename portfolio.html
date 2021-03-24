@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <nav class="header__nav">
+                <a class="logo header__logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link navigation-list__link--current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-list__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="tel:+380961111111">
+                        <svg class="contacts-list__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden">Реалізовані проєкти</h1>
+                <ul class="portfolio-buttons">
+                    <li class="portfolio-buttons__item">
+                        <button class="portfolio-buttons__button">Все</button>
+                    </li>
+                    <li class="portfolio-buttons__item">
+                        <button class="portfolio-buttons__button">Веб-сайты</button>
+                    </li>
+                    <li class="portfolio-buttons__item">
+                        <button class="portfolio-buttons__button">Приложения</button>
+                    </li>
+                    <li class="portfolio-buttons__item">
+                        <button class="portfolio-buttons__button">Дизайн</button>
+                    </li>
+                    <li class="portfolio-buttons__item">
+                        <button class="portfolio-buttons__button">Маркетинг</button>
+                    </li>
+                </ul>
+                
+                <ul class="projects">
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-technokrjak.jpg" alt="Лептоп" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Технокряк</h2>
+                                <p class="portfolio-card__category">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-poster.jpg" alt="Баскетболісти" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Нікого робота програми не дивує так часто, як її творця!</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio-card__category">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-restoran.jpg" alt="Ресторан" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Є два способи писати безпомилкові комп’ютерні програми. І лише третій — правильний.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Ресторан Seafood</h2>
+                                <p class="portfolio-card__category">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-prime.jpg" alt="Навушники" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Я змінив би світ!.. та Господь не надає вихідних кодів…</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Проект Prime</h2>
+                                <p class="portfolio-card__category">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-boxes.jpg" alt="Коробки" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Кепський той Error, що не мріє стати General’ом.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Проект Boxes</h2>
+                                <p class="portfolio-card__category">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-inspiration.jpg" alt="Монітор" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Знання асемблера не звільняє від пересічности…</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Inspiration has no Borders</h2>
+                                <p class="portfolio-card__category">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-limited.jpg" alt="Книга" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Коли комп’ютери були великими — програми були маленькими.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Издание Limited Edition</h2>
+                                <p class="portfolio-card__category">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-LAB.jpg" alt="Бірка" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Із комбінації лінощів і логіки виходять програмісти.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Проект LAB</h2>
+                                <p class="portfolio-card__category">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__item">
+                        <a class="projects__link" href="#">
+                            <div class="portfolio-card">
+                                <img src="./images/portfolio-growing.jpg" alt="Ноутбук" width="370">
+                                <div class="portfolio-card__overlay">
+                                    <p class="portfolio-card__description">Анекдот &#9787;<br>Робота програміста й шамана має багато спільного – обидва мурмочуть незрозумілі слова, виконують незрозумілі дії й не
+                                    можуть пояснити, як воно працює.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-card__title">
+                                <h2 class="portfolio-card__name">Growing Business</h2>
+                                <p class="portfolio-card__category">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__bloc">
+                <a class="logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
+                <address class="address">
+                    г. Киев, пр-т Леси Украинки, 26
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="footer__bloc--join">
+                <p class="footer__title">присоединяйтесь</p>
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <a class="social-links__link social-links__link--reverse" href="#">
+                            <svg class="social-links__icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link social-links__link--reverse" href="#">
+                            <svg class="social-links__icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link social-links__link--reverse" href="#">
+                            <svg class="social-links__icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link social-links__link--reverse" href="#">
+                            <svg class="social-links__icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__bloc--subscription">
+                <p class="footer__title">Подпишитесь на рассылку</p>
+                <form>
+                    <label>
+                        <input class="footer__input" type="email" name="email" placeholder="E-mail" />
+                    </label>
+                    <button class="big-button big-button--footer" type="submit">
+                        Подписаться
+                        <svg class="big-button__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+        
+</html>

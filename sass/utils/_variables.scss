@@ -1,0 +1,32 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --accent: #2196f3;
+
+  --black-text: #212121;
+  --grey-text: #757575;
+  --grey-text-op60: rgba(255, 255, 255, 0.6);
+
+  --icon-color: #afb1b8;
+
+  --background-dark: #2f303a;
+  --background-light: #f5f4fa;
+
+  --border-color-header: #ececec;
+  --border-color-project: #eeeeee;
+
+  --animation-time: 250ms;
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --big-button__font-family: "Roboto", sans-serif;
+  --big-button__font-weight: 700;
+  --big-button__font-size: 16px;
+  --big-button__line-height: 1.875;
+  --big-button__letter-spacing: 0.06em;
+}
+
+$logo__font-family: "Raleway", sans-serif;
+$logo__font-weight: 700;
+$logo__font-size: 26px;
+$logo__line-height: 1.19;
+$logo__letter-spacing: 0.03em;

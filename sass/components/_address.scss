@@ -1,0 +1,20 @@
+.address {
+  margin-top: 20px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__list {
+  margin-top: 9px;
+}
+
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.address__link {
+  text-decoration: none;
+  color: var(--grey-text-op60);
+}

@@ -1,0 +1,43 @@
+.big-button {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent);
+  cursor: pointer;
+
+  text-align: center;
+  color: var(--white);
+  font-family: var(--big-button__font-family);
+  font-weight: var(--big-button__font-weight);
+  font-size: var(--big-button__font-size);
+  line-height: var(--big-button__line-height);
+  letter-spacing: var(--big-button__letter-spacing);
+
+  transition: background-color var(--animation-time) var(--animation-function);
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+
+  &--hero {
+    margin-top: 30px;
+  }
+
+  &--modal {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &--footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+  }
+}
+
+.big-button__icon {
+  margin-left: 10px;
+}

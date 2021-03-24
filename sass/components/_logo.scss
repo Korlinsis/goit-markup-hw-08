@@ -1,0 +1,22 @@
+.logo {
+  font-family: $logo__font-family;
+  font-weight: $logo__font-weight;
+  font-size: $logo__font-size;
+  line-height: $logo__line-height;
+  letter-spacing: $logo__letter-spacing;
+  text-decoration: none;
+
+  color: var(--accent);
+
+  &--white {
+    color: var(--white);
+  }
+
+  &--black {
+    color: var(--black);
+  }
+}
+
+.header__logo {
+  padding: 24px 0 25px;
+}
