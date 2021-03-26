@@ -1,15 +1,36 @@
 .portfolio-buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 
-  &:last-child {
-    margin-right: 0px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
   }
 }
 
 .portfolio-buttons__item {
   margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:nth-child(3) {
+    @media screen and (max-width: $mobile_-1) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &:first-child {
+    @media screen and (max-width: $tablet_-1) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .portfolio-buttons__button {
@@ -22,7 +43,7 @@
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   letter-spacing: 0.03em;
 
   transition: background-color var(--animation-time) var(--animation-function),

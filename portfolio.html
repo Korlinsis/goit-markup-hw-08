@@ -14,39 +14,41 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <nav class="header__nav">
-                <a class="logo header__logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
-                <ul class="navigation-list">
-                    <li class="navigation-list__item">
-                        <a class="navigation-list__link" href="./index.html">Студия</a>
+            <a class="logo header__logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
+            <div class="header__menu">
+                <nav class="header__nav">
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__link navigation-list__link--current" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation-list__item">
+                            <a class="navigation-list__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                            <svg class="contacts-list__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="navigation-list__item">
-                        <a class="navigation-list__link navigation-list__link--current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a class="navigation-list__link" href="#">Контакты</a>
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link" href="tel:+380961111111">
+                            <svg class="contacts-list__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-    
-            <ul class="contacts-list">
-                <li class="contacts-list__item">
-                    <a class="contacts-list__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-list__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-mail"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a class="contacts-list__link" href="tel:+380961111111">
-                        <svg class="contacts-list__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
 
@@ -76,7 +78,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-technokrjak.jpg" alt="Лептоп" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-technokrjak.jpg 1x, ./images/portfolio-technokrjak@2x.jpg 2x"
+                                    src="./images/portfolio-technokrjak.jpg" 
+                                    alt="Лептоп"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -92,7 +99,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-poster.jpg" alt="Баскетболісти" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-poster.jpg 1x, ./images/portfolio-poster@2x.jpg 2x"
+                                    src="./images/portfolio-poster.jpg" 
+                                    alt="Баскетболісти"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Нікого робота програми не дивує так часто, як її творця!</p>
                                 </div>
@@ -107,7 +119,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-restoran.jpg" alt="Ресторан" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-restoran.jpg 1x, ./images/portfolio-restoran@2x.jpg 2x"
+                                    src="./images/portfolio-restoran.jpg" 
+                                    alt="Ресторан"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Є два способи писати безпомилкові комп’ютерні програми. І лише третій — правильний.</p>
                                 </div>
@@ -122,7 +139,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-prime.jpg" alt="Навушники" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-prime.jpg 1x, ./images/portfolio-prime@2x.jpg 2x"
+                                    src="./images/portfolio-prime.jpg" 
+                                    alt="Навушники"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Я змінив би світ!.. та Господь не надає вихідних кодів…</p>
                                 </div>
@@ -137,7 +159,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-boxes.jpg" alt="Коробки" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-boxes.jpg 1x, ./images/portfolio-boxes@2x.jpg 2x"
+                                    src="./images/portfolio-boxes.jpg" 
+                                    alt="Коробки"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Кепський той Error, що не мріє стати General’ом.</p>
                                 </div>
@@ -152,7 +179,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-inspiration.jpg" alt="Монітор" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-inspiration.jpg 1x, ./images/portfolio-inspiration@2x.jpg 2x"
+                                    src="./images/portfolio-inspiration.jpg" 
+                                    alt="Монітор"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Знання асемблера не звільняє від пересічности…</p>
                                 </div>
@@ -167,7 +199,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-limited.jpg" alt="Книга" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-limited.jpg 1x, ./images/portfolio-limited@2x.jpg 2x"
+                                    src="./images/portfolio-limited.jpg" 
+                                    alt="Книга"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Коли комп’ютери були великими — програми були маленькими.</p>
                                 </div>
@@ -182,7 +219,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-LAB.jpg" alt="Бірка" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-LAB.jpg 1x, ./images/portfolio-LAB@2x.jpg 2x"
+                                    src="./images/portfolio-LAB.jpg" 
+                                    alt="Бірка"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Із комбінації лінощів і логіки виходять програмісти.</p>
                                 </div>
@@ -197,7 +239,12 @@
                     <li class="projects__item">
                         <a class="projects__link" href="#">
                             <div class="portfolio-card">
-                                <img src="./images/portfolio-growing.jpg" alt="Ноутбук" width="370">
+                                <img class="portfolio-card__image" 
+                                    srcset="./images/portfolio-growing.jpg 1x, ./images/portfolio-growing@2x.jpg 2x"
+                                    src="./images/portfolio-growing.jpg" 
+                                    alt="Ноутбук"
+                                    loading="lazy"
+                                />
                                 <div class="portfolio-card__overlay">
                                     <p class="portfolio-card__description">Анекдот &#9787;<br>Робота програміста й шамана має багато спільного – обидва мурмочуть незрозумілі слова, виконують незрозумілі дії й не
                                     можуть пояснити, як воно працює.</p>
@@ -216,61 +263,63 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__bloc">
-                <a class="logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
-                <address class="address">
-                    г. Киев, пр-т Леси Украинки, 26
-                    <ul class="address__list">
-                        <li class="address__item">
-                            <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div class="footer__auxiliary-element">
+                <div class="footer__bloc footer__bloc--address">
+                    <a class="logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
+                    <address class="address">
+                        г. Киев, пр-т Леси Украинки, 26
+                        <ul class="address__list">
+                            <li class="address__item">
+                                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+    
+                <div class="footer__bloc footer__bloc--join">
+                    <p class="footer__title">присоединяйтесь</p>
+                    <ul class="social-links">
+                        <li class="social-links__item">
+                            <a class="social-links__link social-links__link--reverse" href="#">
+                                <svg class="social-links__icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="social-links__item">
+                            <a class="social-links__link social-links__link--reverse" href="#">
+                                <svg class="social-links__icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a class="social-links__link social-links__link--reverse" href="#">
+                                <svg class="social-links__icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a class="social-links__link social-links__link--reverse" href="#">
+                                <svg class="social-links__icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
     
-            <div class="footer__bloc--join">
-                <p class="footer__title">присоединяйтесь</p>
-                <ul class="social-links">
-                    <li class="social-links__item">
-                        <a class="social-links__link social-links__link--reverse" href="#">
-                            <svg class="social-links__icon">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link social-links__link--reverse" href="#">
-                            <svg class="social-links__icon">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link social-links__link--reverse" href="#">
-                            <svg class="social-links__icon">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a class="social-links__link social-links__link--reverse" href="#">
-                            <svg class="social-links__icon">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-    
-            <div class="footer__bloc--subscription">
+            <div class="footer__bloc footer__bloc--subscription">
                 <p class="footer__title">Подпишитесь на рассылку</p>
-                <form>
-                    <label>
-                        <input class="footer__input" type="email" name="email" placeholder="E-mail" />
+                <form class="footer__form">
+                    <label for="footer__input">
                     </label>
+                    <input class="footer__input" type="email" name="email" placeholder="E-mail" id="footer__input" />
                     <button class="big-button big-button--footer" type="submit">
                         Подписаться
                         <svg class="big-button__icon" width="24" height="24">
