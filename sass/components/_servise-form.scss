@@ -7,10 +7,14 @@
   color: var(--black-text);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 
 .servise-form__label {
@@ -57,10 +61,15 @@
     }
 
     &::placeholder {
-      font-size: 12px;
-      line-height: 1.166;
+      font-size: 14px;
+      line-height: 1.143;
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
+
+      @media screen and (min-width: $desktop) {
+        font-size: 12px;
+        line-height: 1.166;
+      }
     }
   }
 }

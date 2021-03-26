@@ -20,13 +20,19 @@
 
 .submit-area__square {
   display: inline-block;
-  width: 16px;
+  width: 22px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 13px;
   border: 2px solid var(--black-text);
   border-radius: 2px;
   opacity: 1;
   transition: opacity var(--animation-time) var(--animation-function);
+
+  @media screen and (min-width: $mobile) {
+    margin-right: 4px;
+    width: 16px;
+    height: 15px;
+  }
 }
 
 .submit-area__checkbox:checked ~ .submit-area__square {
@@ -38,9 +44,14 @@
 }
 
 .submit-area__contract {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.666;
   color: var(--grey-text);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 
   &--link {
     color: var(--accent);

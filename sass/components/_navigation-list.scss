@@ -1,6 +1,10 @@
 .navigation-list {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 
 .navigation-list__item {

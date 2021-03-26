@@ -14,13 +14,21 @@
 .header__menu {
   display: none;
 
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  // }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  margin-right: 305px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 305px;
+  }
 }
