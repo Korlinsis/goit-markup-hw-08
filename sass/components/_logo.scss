@@ -8,6 +8,11 @@
 
   color: var(--accent);
 
+  @media screen and (min-width: $desktop) {
+    font-size: $logo__font-size--desktop;
+    line-height: $logo__line-height--desktop;
+  }
+
   &--white {
     color: var(--white);
   }
