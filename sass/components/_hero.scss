@@ -5,6 +5,10 @@
 }
 
 .hero__title {
-  max-width: 700px;
+  max-width: 360px;
   display: inline-block;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 700px;
+  }
 }
