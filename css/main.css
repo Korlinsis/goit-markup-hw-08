@@ -374,6 +374,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -467,6 +470,59 @@ img {
 
 .header__logo {
   padding: 24px 0 25px;
+}
+
+.servise-button {
+  background-color: var(--white);
+  fill: var(--black);
+  background-origin: border-box;
+  padding: 0px;
+  cursor: pointer;
+  -webkit-transition: fill var(--animation-time) var(--animation-function);
+  transition: fill var(--animation-time) var(--animation-function);
+}
+
+.servise-button:hover, .servise-button:focus {
+  fill: var(--accent);
+}
+
+.servise-button--modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.servise-button--header {
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .servise-button--header {
+    display: none;
+  }
+}
+
+.servise-button__icon {
+  fill: inherit;
+}
+
+.servise-button__icon--modal {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 30px;
+  height: 30px;
+}
+
+.servise-button__icon--header {
+  width: 40px;
+  height: 40px;
 }
 
 .navigation-list {
@@ -1376,34 +1432,6 @@ img {
 .backdrop.is-hidden .modal-window {
   -webkit-transform: translateX(-50%) translateY(-50%) scale(0.5);
           transform: translateX(-50%) translateY(-50%) scale(0.5);
-}
-
-.close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: var(--white);
-  fill: var(--black);
-  background-origin: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: fill var(--animation-time) var(--animation-function);
-  transition: fill var(--animation-time) var(--animation-function);
-}
-
-.close-button:hover, .close-button:focus {
-  fill: var(--accent);
-}
-
-.close-button__icon {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  fill: inherit;
 }
 
 .servise-form {
