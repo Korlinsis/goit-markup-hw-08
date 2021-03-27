@@ -26,6 +26,7 @@
   border: 2px solid var(--black-text);
   border-radius: 2px;
   opacity: 1;
+
   transition: opacity var(--animation-time) var(--animation-function);
 
   @media screen and (min-width: $mobile) {

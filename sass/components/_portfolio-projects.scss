@@ -1,4 +1,4 @@
-.projects {
+.portfolio-projects {
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
   }
 }
 
-.projects__item {
+.portfolio-projects__item {
   &:not(:last-child) {
     @media screen and (max-width: $tablet_-1) {
       margin-bottom: $grid-gap;
@@ -25,10 +25,11 @@
   }
 }
 
-.projects__link {
-  text-decoration: none;
+.portfolio-projects__link {
   display: flex;
   flex-direction: column;
+
+  text-decoration: none;
 
   transition: box-shadow var(--animation-time) var(--animation-function);
 

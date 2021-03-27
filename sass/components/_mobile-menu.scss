@@ -37,6 +37,8 @@
   text-decoration: none;
   color: inherit;
 
+  transition: color var(--animation-time) var(--animation-function);
+
   &:hover,
   &:focus {
     color: var(--accent);
@@ -67,6 +69,8 @@
   color: var(--grey-text);
   padding: 15px 0;
   margin-bottom: 34px;
+
+  transition: color var(--animation-time) var(--animation-function);
 
   &:hover,
   &:focus {

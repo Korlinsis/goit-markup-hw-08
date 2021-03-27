@@ -1442,6 +1442,8 @@ img {
   line-height: 1.175;
   text-decoration: none;
   color: inherit;
+  -webkit-transition: color var(--animation-time) var(--animation-function);
+  transition: color var(--animation-time) var(--animation-function);
 }
 
 .mobile-menu__navigation-link:hover, .mobile-menu__navigation-link:focus {
@@ -1477,6 +1479,8 @@ img {
   color: var(--grey-text);
   padding: 15px 0;
   margin-bottom: 34px;
+  -webkit-transition: color var(--animation-time) var(--animation-function);
+  transition: color var(--animation-time) var(--animation-function);
 }
 
 .mobil-menu__mail:hover, .mobil-menu__mail:focus {
@@ -1856,7 +1860,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .projects {
+  .portfolio-projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1868,13 +1872,13 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .projects__item:not(:last-child) {
+  .portfolio-projects__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .projects__item {
+  .portfolio-projects__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
@@ -1883,14 +1887,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .projects__item {
+  .portfolio-projects__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
   }
 }
 
-.projects__link {
-  text-decoration: none;
+.portfolio-projects__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1898,13 +1901,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-decoration: none;
   -webkit-transition: -webkit-box-shadow var(--animation-time) var(--animation-function);
   transition: -webkit-box-shadow var(--animation-time) var(--animation-function);
   transition: box-shadow var(--animation-time) var(--animation-function);
   transition: box-shadow var(--animation-time) var(--animation-function), -webkit-box-shadow var(--animation-time) var(--animation-function);
 }
 
-.projects__link:hover {
+.portfolio-projects__link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1950,7 +1954,7 @@ img {
   }
 }
 
-.projects__item:hover .portfolio-card__overlay {
+.portfolio-projects__item:hover .portfolio-card__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
