@@ -728,7 +728,7 @@ img {
 }
 
 .section--hero {
-  max-width: 480px;
+  max-width: 767px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -750,7 +750,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .section--hero {
-    max-width: 768px;
+    max-width: 1199px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_tablet.jpg");
   }
@@ -1904,6 +1904,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow var(--animation-time) var(--animation-function);
   transition: -webkit-box-shadow var(--animation-time) var(--animation-function);
